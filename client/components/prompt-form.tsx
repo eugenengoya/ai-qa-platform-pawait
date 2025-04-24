@@ -24,7 +24,7 @@ export default function PromptForm() {
                 throw new Error("Failed to submit prompt")
             }
             const data = await res.json()
-            setResponse(data.response)
+            setResponse(data.response.response)
         } catch (error) {
             console.error("Error submitting prompt:", error)
         }
