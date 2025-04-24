@@ -3,8 +3,8 @@
 install
 
 ```bash
-pip install "fastapi[standard]"
-npm install
+pip install requirements.txt
+npm install --force
 ```
 
 run server
