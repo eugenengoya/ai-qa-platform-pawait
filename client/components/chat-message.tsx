@@ -15,10 +15,13 @@ export default function ChatMessage({ role, content }: ChatMessageProps) {
   return (
     <div className={`flex gap-4 ${isUser ? 'justify-start flex-row-reverse' : ''} mb-4`}>
       <Avatar>
-        <AvatarFallback>{isUser ? 'U' : 'G'}</AvatarFallback>
+        <AvatarFallback className={`${isUser ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}>
+          {isUser ? 'U' : 'G'}
+        </AvatarFallback>
       </Avatar>
+
       <div
-        className={`max-w-xl p-4 rounded-lg
+        className={`max-w-xl py-2 px-3 rounded-lg
           ${isUser ? 'bg-blue-500 text-white' : 'bg-gray-100 dark:bg-gray-800 dark:text-white'}
         `}
       >
