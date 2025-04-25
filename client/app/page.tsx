@@ -1,12 +1,12 @@
 "use client"
 
-import PromptForm from "@/components/prompt-form";
+import Chat from "@/components/chat";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 container mx-auto max-w-7xl">
       <h1>AI Q&A Platform</h1>
-      <PromptForm />
+      <Chat />
     </div>
   );
 }
